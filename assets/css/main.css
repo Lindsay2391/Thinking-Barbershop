@@ -2098,16 +2098,16 @@ input, select, textarea {
 		#header:before {
 			content: '';
 			position: absolute;
-			top: -2;
-			left: -2;
+			top: -0.5;
+			left: -1;
 			width: 125%;
 			height: 125%;
-			background: url("../../images/banner-barbershop.png") center center;
-			-webkit-filter: blur(8px);
-			-moz-filter: blur(8px);
-			-o-filter: blur(8px);
-			-ms-filter: blur(8px);
-			filter: blur(8px);
+			background: url("../../images/banner-barbershop.jpg") center center;
+			-webkit-filter: blur(7px);
+			-moz-filter: blur(7px);
+			-o-filter: blur(7px);
+			-ms-filter: blur(7px);
+			filter: blur(7px);
 			background-size: cover;
 			padding: 0;
 		}
