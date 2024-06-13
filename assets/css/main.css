@@ -7,6 +7,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1624,8 +1626,9 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-/* Button */
 
+	
+/* Button */
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -1653,31 +1656,76 @@ input, select, textarea {
 		line-height: 4em;
 	}
 		
-		/* Style the buttons that are used to open and close the accordion panel */
-		.accordion {
-			background-color: #eee;
-			color: #444;
-			cursor: pointer;
-			padding: 18px;
-			width: 100%;
-			text-align: left;
-			border: none;
-			outline: none;
-			transition: 0.4s;
+	/* Core styles/functionality */
+	.tab input {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+	.tab__content {
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.35s;
+	}
+	.tab input:checked ~ .tab__content {
+		max-height: 100rem;
+	}
+	
+	/* Visual styles */
+	.accordion {
+		color: #f98780;
+		border: 2px solid;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+	.tab__label,
+	.tab__close {
+		display: flex;
+		color: white;
+		background: #f98780;
+		cursor: pointer;
+	}
+	.tab__label {
+		justify-content: space-between;
+		padding: 1rem;
+	}
+	.tab__label::after {
+		content: "\276F";
+		width: 1em;
+		height: 1em;
+		text-align: center;
+		transform: rotate(90deg);
+		transition: all 0.35s;
+	}
+	.tab input:checked + .tab__label::after {
+		transform: rotate(270deg);
+	}
+	.tab__content p {
+		margin: 0;
+		padding: 1rem;
+	}
+	.tab__close {
+		justify-content: flex-end;
+		padding: 0.5rem 1rem;
+		font-size: 0.75rem;
+	}
+	.accordion--radio {
+		--theme: #f98780;
+	}
+	
+	/* Arrow animation */
+	.tab input:not(:checked) + .tab__label:hover::after {
+		animation: bounce .5s infinite;
+	}
+	@keyframes bounce {
+		25% {
+		transform: rotate(90deg) translate(.25rem);
 		}
-		
-		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-		.active, .accordion:hover {
-			background-color: #ccc;
+		75% {
+		transform: rotate(90deg) translate(-.25rem);
 		}
-		
-		/* Style the accordion panel. Note: hidden by default */
-		.panel {
-			padding: 0 18px;
-			background-color: white;
-			display: none;
-			overflow: hidden;
-		} 
+	}
+  
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
@@ -2091,6 +2139,8 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		position: relative;
+		background: url("../../images/banner-barbershop.jpg") center center;
+		background-size: cover;
 		height: 24em;
 		text-shadow: 1px 2px 1.5px rgba(0,0,0,0.7);
 	} 
@@ -2098,17 +2148,13 @@ input, select, textarea {
 		#header:before {
 			content: '';
 			position: absolute;
-			top: -0.5;
-			left: -1;
-			width: 125%;
-			height: 125%;
-			background: url("../../images/banner-barbershop.jpg") center center;
-			-webkit-filter: blur(7px);
-			-moz-filter: blur(7px);
-			-o-filter: blur(7px);
-			-ms-filter: blur(7px);
-			filter: blur(7px);
-			background-size: cover;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			backdrop-filter: blur(7px);
+			
+			overflow-x: hidden;
 			padding: 0;
 		}
 
