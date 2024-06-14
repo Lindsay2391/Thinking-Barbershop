@@ -1639,7 +1639,7 @@ input, select, textarea {
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
 		display: inline-block;
-		background: #444;
+		background: #fcfcfc;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -1727,6 +1727,65 @@ input, select, textarea {
 	}
   
 
+
+	button.course-accordion {
+		color: white;
+		cursor: pointer;
+		padding: 8px;
+		width: 100%;
+		border: none;
+		background: none;
+		text-align: left;
+		outline: none;
+		font-size: 0.9em;
+		font-weight: 600;
+		font-style: normal;
+		transition: 0.4s;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.10em;
+		box-shadow: inset 0px 0px 2px 1px #ffffff;
+		margin-top: 0.25%;
+		margin-bottom: 0.25%;
+	}
+	
+	/*When the button is active or mouse hovers*/
+	button.course-accordion.active,
+	button.course-accordion.hover {
+		background-color: rgba(252, 153, 153, 0.6);
+	}
+	
+	/*button not active*/
+	button.course-accordion:after {
+		content: '\002B';
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	
+	/* minus button */
+	button.course-accordion.active:after {
+		content: "\2212";
+		
+	
+	}
+
+	div.course-panel {
+		padding: 0 18px;
+		background-color: transparent;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		  width: 96%;
+		font-size: 15px;
+		line-height: 1.6em;
+		font-weight: 400;
+		font-style: normal;
+	}
+	
+	
+
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -1769,14 +1828,17 @@ input, select, textarea {
 				background-color: #d96760;
 			}
 
+
+
+
 		input[type="button"].style2,
 		input[type="submit"].style2,
 		input[type="reset"].style2,
 		button.style2,
 		.button.style2 {
 			background: none;
-			color: #606167;
-			box-shadow: inset 0px 0px 2px 0px #a0a1a7;
+			color: #ffffff;
+			box-shadow: inset 0px 0px 2px 1px #ffffff;
 		}
 
 			input[type="button"].style2:hover,
@@ -1795,12 +1857,13 @@ input, select, textarea {
 				box-shadow: inset 0px 0px 2px 0px #202127;
 			}
 
+		
 		input[type="button"].style3,
 		input[type="submit"].style3,
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b url("../images/overlay.png");
 			color: #fff;
 		}
 
