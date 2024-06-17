@@ -1870,7 +1870,7 @@ input, select, textarea {
 		padding: 8px;
 		width: 100%;
 		border: none;
-		background:  rgb(190, 17, 50);
+		background:  #e97770;
 		text-align: left;
 		outline: none;
 		font-size: 0.9em;
@@ -1880,7 +1880,7 @@ input, select, textarea {
 		line-height: 1.5em;
 		text-transform: uppercase;
 		letter-spacing: 0.10em;
-		box-shadow: inset 0px 0px 2px 1px rgb(190, 17, 50);
+		box-shadow: inset 0px 0px 2px 1px #e97770;
 		margin-top: 0.25%;
 		margin-bottom: 0.25%;
 	}
@@ -1893,7 +1893,7 @@ input, select, textarea {
 	button.red-accordion.active,
 	button.red-accordion.hover {
 		background-color: rgb(255, 255, 255); 
-		color: rgb(190, 17, 50);
+		color: #e97770;
 	}
 	
 	/*button not active*/
@@ -1908,7 +1908,7 @@ input, select, textarea {
 	/* minus button */
 	button.red-accordion.active:after {
 		content: "\2212";
-		color:rgb(190, 17, 50);
+		color:#e97770;
 	}
 
 	div.red-panel {
