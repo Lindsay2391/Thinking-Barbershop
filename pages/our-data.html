@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Out Data - Thinking Barbershop</title>
+		<link rel="icon" type="image/x-icon" href="/images/logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="/">Thinking Barbershop</a></h1>
+						<p>Worldwide Barbershop Harmony Scores and Insights</p>
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+							<script>
+							$(function(){
+							$("#nav").load("/nav.html");
+							});
+						</script> 
+					</nav>
+
+				</section>
+
+			<!-- Main -->
+			<div id="main" class="wrapper style2">
+				<div class="title">Our Data</div>
+				<div class="container">
+
+					<!-- Content -->
+						<div id="content">
+							<article class="box post">
+								<header class="style1">
+									<h2>Thinking Barbershop Data<br class="mobile-hide" /></h2>
+								</header>
+								<a href="#" class="image featured">
+									<img src="/images/our_data_banner.jpg" alt="" />
+								</a><br>
+								<button class="dark-accordion">What is captured from Scoresheets?</button>
+								<!-- This div holds the content to be displayed-->
+									<div class="dark-panel">
+										<section id="features">
+											<div class="container">
+												<div class="row gtr-25">
+													<div class="col-7-5 col-12-medium">
+															<div id="content">
+																<article class="box post">
+																	<header>
+																		<h2><br>Scraping data from Scoresheets</h2>
+																	</header>
+																	<p>The model is designed to pull as much information which is standard across most / all scoresheets. 
+																	</p>
+																	<p>
+																		The fields which all scoresheets have are contest details (<strong>name</strong>, <strong>date</strong>, <strong>organization</strong>, <strong>location</strong>), <strong>quartet name</strong>
+																		, results (<strong>total score</strong>, <strong>song names</strong>, <strong>category scores</strong>), and judge details (<strong>name</strong>, <strong>category</strong>).
+																	</p>
+																	<p>
+																		Some fields are <i>not</i> included in all scoresheets but are captured when possible such as quartet <strong>rank</strong> and <strong>quartet location / region</strong>. 
+																		Due low coverage and inconsistency in naming standards, quartet <strong>member names</strong> are not captured.
+																	</p>
+
+																	<p><i>Here is a shortened example of scoresheet being parsed.</i></p>
+																	<a href="#" class="image featured">
+																		<img src="/images/data/parse-quartet.jpg" alt="" />
+																	</a>
+																	<a href="#" class="image featured">
+																		<img src="/images/data/parse-judge.jpg" alt="" />
+																	</a>
+																</article>
+								
+															</div>
+													</div>
+													<div class="col-4-5 col-12-medium">
+														<!-- Sidebar -->
+															<div id="sidebar">
+																<section class="box">
+																	<br>
+																	<a href="#" class="image featured"><img src="/images/data/parse-detail.jpg" alt="" /></a>
+																</section>
+															</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+									
+								<button class="dark-accordion">What scoresheets have been captured so far?</button>
+								<!-- This div holds the content to be displayed-->
+									<div class="dark-panel">
+										<br>
+										<p class="style3">The purpose behind TBQR is to recognize the talented barbershop quartets across the world, acknowledging that there can be a multitude of reasons why a group may not be able to attend BHS International.</p>
+
+										<div class='tableauPlaceholder' id='viz1717598756758' style='position: relative'>
+											<noscript>
+												<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;Search-ThinkingBarbershop&#47;Scoresheets-Tracker&#47;1_rss.png' style='border: none' />
+												</a>
+											</noscript>
+											<object class='tableauViz'  style='display:none;'>
+												<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+												<param name='embed_code_version' value='3' /> 
+												<param name='site_root' value='' />
+												<param name='name' value='Search-ThinkingBarbershop&#47;Scoresheets-Tracker' />
+												<param name='tabs' value='no' />
+												<param name='toolbar' value='no' />
+												<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;Search-ThinkingBarbershop&#47;Scoresheets-Tracker&#47;1.png' /> 
+												<param name='animate_transition' value='yes' />
+												<param name='display_static_image' value='yes' />
+												<param name='display_spinner' value='yes' />
+												<param name='display_overlay' value='yes' />
+												<param name='display_count' value='yes' />
+												<param name='language' value='en-US' />
+												<param name="showShareOptions" value = 'no' />
+												<param name='render' value='true' />
+											</object>
+										</div>                
+										<script type='text/javascript'>                    
+											var divElement = document.getElementById('viz1717598756758');                    
+											var vizElement = divElement.getElementsByTagName('object')[0];                    
+											if ( divElement.offsetWidth > 800 ) { 
+												vizElement.style.width='100%';
+												vizElement.style.height='600px';
+											} else if ( divElement.offsetWidth > 500 ) { 
+												vizElement.style.width='100%';
+												vizElement.style.height='600px';
+											} else { 
+												vizElement.style.width='100%';
+												vizElement.style.height='600px';
+											}                     
+											var scriptElement = document.createElement('script');                    
+											scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+											vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+										</script>
+
+									</div>
+								<button class="dark-accordion">Challenges & Limitations</button>
+								<!-- This div holds the content to be displayed-->
+									<div class="dark-panel">
+										<br>
+											<p class="style3">Collecting and collating scores from multiple contests, across multiple oranizations, over an extended period of time comes with a number of challenges. Hopefully understanding these challenges and how it is handled on <strong>Thinking Barbershop</strong> will explain why you might see some slight differences on here to what you would expect.</p>
+										<header>
+											<h2><br>ACCESS TO SCORESHEETS</h2>
+										</header>
+											<p class="style3">Across BHS and Alliance organizations there has been no single database of scores to date. There are thousands of scoresheets of quartet results, so the choice was made early to use a model to parse the scores and populate a database. This does mean that we cannot manually enter scores from any other source, limiting us to requiring the raw scoresheet PDFs for all competitions.</p>
+											<p class="style3">With each organization being run seperately, the quality and availability of contest scoresheets over time can vary. With some organizations only having a couple of years of scoresheets available, and others having decades, the broader analysis will tend to be more reliable and weighted towards those organizations with the most historical scoresheets publicly available.</p>
+											<p class="style3">Additionally there are cases when a quartet will be assessed for a score (competing out of region, performing for assessment only etc...) and not included on any scoresheet. While their score may be valid for entry to other contests, it will not be part of the historical data on this site.</p>
+										<header>
+											<h2><br>SCORESHEET VARIABILITY</h2>
+										</header>
+											<p class="style3">Formatting and completeness of information on scoresheets has changed over the years. Even now, between different organizations, there is no standard scoresheet template.</p>
+											<p class="style3">The model is great but it is not perfect. As historical scoresheets have been added, often the limiting factor is when the model struggles to parse an old structure, so it needs to be manually trained to handle the new (old) format.</p>
+											<p class="style3">Other factors can vary too, like whether all quartets on a given scoresheet are all competing or not. This is particularly challenging with BHS, as often you will have Out of Region quartets, and champion quartets competing to qualify for International.
+											As it currently stands there is no indicator in our database whether a quartet on a scoresheet was competing for a score or not. This is noted as a challenge to resolve in the future but is low on the priority list. For official contest champions please refer to the relevant organization / region official website.</p>
+										<header>
+											<h2><br>SONG & QUARTET NAME VARIABILITY</h2>
+										</header>
+											<p class="style3">Historically most organizations have relied on manual entry from quartet representatives for <strong>Quartet Name</strong> and <strong>Song Names</strong>. This means that a quartet can sing the same song across multiple contests and for it to have a different title. Similarly there have been cases where a quartet name will vary slightly between contests.</p>
+											<p class="style3">The data collection philosophy has been to extract exactly what is on the scoresheet, meaning all of these inaccuracies are in the database. To account for this, some standardization has been done to align names which are for the same quartet/song but with different spelling.</p>
+											<div class="row gtr-25">
+												<a href="#" class="image restrict"><img src="/images/data/Nobody-till.png" alt="" /></a>
+											</div>
+										
+											<header>
+											<h2><br>ALIGNING ORGANIZATIONS</h2>
+										</header>
+											<p class="style3">Each organization operates in isolation, so there are nuances and overlaps which affect the data.</p>
+											<p class="style3">Contest names and structures - Regional, District, International & National streams, Gender categories, qualification structures and rules. All of these vary between the different organizations. To account for this, a broadly universal contest structure has been created, with variations all having unique contest ids.
+												The naming and structure of this has been based on public information about each organization, so there are no doubt nuances which are not captured. If you are interested in helping, we are looking for supporters from each organization to improve the current structure.
+											</p>
+
+											<p class="style3"><i>Top Shelf</i> is a popular quartet name! There has been a <i>Top Shelf</i> quartet in BHA, JAC, SWD, NSC, and MAD. Without intervention, all of these quartets would be grouped together making it difficult to see individal group progress and achievements.
+												To solve this, a model is run when parsing a new scoresheet to see whether a given quartet name matches an existing quartet based on contest location, contest type (regional, national, international), and overlapping song names. This helps but is not perfect. If you see multiple quartets overlapping, send a screenshot to <strong>support@thinkingbarbershop.com</strong> and it will be adjusted as soon as possible.
+											</p>
+											
+
+										<p class="style3"></p>
+									</div>
+								<button class="dark-accordion">Next Steps</button>
+								<!-- This div holds the content to be displayed-->
+									<div class="dark-panel">
+										<br>
+										<p class="style3">Next Steps</p>
+									</div>
+							</article>
+						</div>
+
+				</div>
+			</div>
+
+				</section>	
+			<!-- Highlights -->
+			<section id="highlights" class="wrapper style3">
+				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+								<script>
+								$(function(){
+								$("#highlights").load("/featured-posts.html");
+						});
+					</script> 
+			</section>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+								<script>
+								$(function(){
+								$("#footer").load("/pages/footer.html");
+						});
+					</script> 
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/accordian.js"></script>
+
+
+	</body>
+</html>

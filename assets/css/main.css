@@ -292,9 +292,15 @@ input, select, textarea {
 			width: 33.33333%;
 		}
 
+		.row > .col-4-5 {
+			width: 37.5%;
+		}
+
 		.row > .off-4 {
 			margin-left: 33.33333%;
 		}
+
+
 
 		.row > .col-5 {
 			width: 41.66667%;
@@ -304,9 +310,15 @@ input, select, textarea {
 			margin-left: 41.66667%;
 		}
 
+		
 		.row > .col-6 {
 			width: 50%;
 		}
+
+		.row > .col-6-5 {
+			width: 54.16667%;
+		}
+
 
 		.row > .off-6 {
 			margin-left: 50%;
@@ -314,6 +326,10 @@ input, select, textarea {
 
 		.row > .col-7 {
 			width: 58.33333%;
+		}
+
+		.row > .col-7-5 {
+			width: 62.5%;
 		}
 
 		.row > .off-7 {
@@ -1625,6 +1641,10 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+		.image.restrict {
+			display: block;
+			width: 50%;
+		}
 
 
 	
@@ -1767,8 +1787,6 @@ input, select, textarea {
 	/* minus button */
 	button.course-accordion.active:after {
 		content: "\2212";
-		
-	
 	}
 
 	div.course-panel {
@@ -1784,7 +1802,128 @@ input, select, textarea {
 		font-style: normal;
 	}
 	
+
+	button.dark-accordion {
+		color: rgb(3, 3, 3);
+		cursor: pointer;
+		padding: 8px;
+		width: 100%;
+		border: none;
+		background:  rgb(160, 184, 197);
+		text-align: left;
+		outline: none;
+		font-size: 0.9em;
+		font-weight: 600;
+		font-style: normal;
+		transition: 0.4s;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.10em;
+		box-shadow: inset 0px 0px 2px 1px #000000;
+		margin-top: 0.25%;
+		margin-bottom: 0.25%;
+	}
 	
+	/*When the button is active or mouse hovers*/
+	input[type="button"].dark-accordion:hover,
+	input[type="submit"].dark-accordion:hover,
+	input[type="reset"].dark-accordion:hover,
+	button.dark-accordion:hover,
+	button.dark-accordion.active,
+	button.dark-accordion.hover {
+		background-color: rgb(72, 83, 90); 
+		color: #ffffff
+	}
+	
+	/*button not active*/
+	button.dark-accordion:after {
+		content: '\002B';
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	
+	/* minus button */
+	button.dark-accordion.active:after {
+		content: "\2212";
+		color:#ffffff;
+	}
+
+	div.dark-panel {
+		padding: 0 0px;
+		background-color: transparent;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		  width: 96%;
+		font-size: 15px;
+		line-height: 1.6em;
+		font-weight: 400;
+		font-style: normal;
+	}	
+
+
+	button.red-accordion {
+		color: rgb(255, 255, 255);
+		cursor: pointer;
+		padding: 8px;
+		width: 100%;
+		border: none;
+		background:  rgb(190, 17, 50);
+		text-align: left;
+		outline: none;
+		font-size: 0.9em;
+		font-weight: 600;
+		font-style: normal;
+		transition: 0.4s;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.10em;
+		box-shadow: inset 0px 0px 2px 1px rgb(190, 17, 50);
+		margin-top: 0.25%;
+		margin-bottom: 0.25%;
+	}
+	
+	/*When the button is active or mouse hovers*/
+	input[type="button"].red-accordion:hover,
+	input[type="submit"].red-accordion:hover,
+	input[type="reset"].red-accordion:hover,
+	button.red-accordion:hover,
+	button.red-accordion.active,
+	button.red-accordion.hover {
+		background-color: rgb(255, 255, 255); 
+		color: rgb(190, 17, 50);
+	}
+	
+	/*button not active*/
+	button.red-accordion:after {
+		content: '\002B';
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	
+	/* minus button */
+	button.red-accordion.active:after {
+		content: "\2212";
+		color:rgb(190, 17, 50);
+	}
+
+	div.red-panel {
+		padding: 0 0px;
+		background-color: transparent;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		  width: 96%;
+		font-size: 15px;
+		line-height: 1.6em;
+		font-weight: 400;
+		font-style: normal;
+	}	
+
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
@@ -1999,7 +2138,7 @@ input, select, textarea {
 			.feature-list h3:before {
 				display: block;
 				color: #fff;
-				background: #2f333b url("images/overlay.png");
+				background: #2f333b url("/images/overlay.png");
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -2019,6 +2158,60 @@ input, select, textarea {
 			font-size: 0.8em;
 		}
 
+
+	.feature-list-2 {
+		max-width: auto;
+		margin-left: None;
+		margin-right: None;
+		position: relative;
+		top: 0.75em;
+	}
+
+		.feature-list-2 section {
+			border-top: solid 1px #eee;
+			padding-top: 3em;
+			padding-left: 0;
+			position: relative;
+		}
+
+		@media screen and (min-width: 981px) {
+
+			.feature-list-2 > .row > :nth-child(-n + 2) > section {
+				border-top: 0;
+				padding-top: 0;
+			}
+
+		}
+
+		.feature-list-2 h3 {
+			color: #e97770 !important;
+			margin: -0.35em 0 0.75em 0;
+			font-size: 1.15em;
+			letter-spacing: 0.05em;
+		}
+
+			.feature-list-2 h3:before {
+				display: block;
+				color: #fff;
+				background: #2f333b url("/images/overlay.png");
+				border-radius: 2.5em;
+				text-align: center;
+				width: 2.5em;
+				height: 2.5em;
+				line-height: 2.5em;
+				margin-right: 0.75em;
+				position: absolute;
+				left: 0;
+				margin-top: -0.5em;
+			}
+
+		.feature-list-2.small section {
+			padding-left: 0em;
+		}
+
+		.feature-list-2.small h3:before {
+			font-size: 0.8em;
+		}
 /* Icons */
 
 	.icon {
