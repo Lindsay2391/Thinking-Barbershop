@@ -2701,9 +2701,8 @@ input, select, textarea {
 			}
 
 		#footer .sub-container {
-			padding-bottom: 5em;
-			margin-bottom: 4em;
-			border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+			padding-bottom: 2em;
+			margin-bottom: 0em;
 			
 		}
 
@@ -2718,7 +2717,13 @@ input, select, textarea {
 			#footer .feature-list h3:before {
 				background: #3d4249 url("/images/overlay.png");
 			}
+/* Contact */
 
+	#contact {
+		padding-top: 4em;
+		margin-top: 0em;
+		border-top: solid 1px rgba(255, 255, 255, 0.05);
+	}
 /* Copyright */
 
 	#copyright {
