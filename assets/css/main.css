@@ -2613,7 +2613,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #282b34 url("/images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2730,7 +2730,7 @@ input, select, textarea {
 		text-align: center;
 		padding-top: 6em;
 		margin-top: 6em;
-		border-top: solid 1px rgba(255, 255, 255, 0.05);
+		border-top: solid 1px #ffffff0d;
 	}
 
 		#copyright ul {
@@ -2755,6 +2755,7 @@ input, select, textarea {
 					border-left: 0;
 					margin-left: 0;
 					padding-left: 0;
+					background-color: #292a36;
 				}
 
 		#copyright a {
