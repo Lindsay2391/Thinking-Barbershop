@@ -29,7 +29,7 @@
 							<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 								<script>
 								$(function(){
-								$("#nav").load("/nav.html");
+								$("#nav").load("/elements/nav.html");
 								});
 							</script> 
 						</nav>
@@ -133,15 +133,23 @@
 
 
 			<!-- Footer -->
-			<section id="footer" class="wrapper">
+			<section id="footer" class="wrapper style1">
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-								<script>
-								$(function(){
-								$("#footer").load("/pages/footer.html");
-						});
-					</script> 
+				<div class="title">About</div>
+					<div class="container">
+						<section id='footer-text'>
+							<script>$(function(){$("#footer-text").load("/elements/footer/footer-text.html")});</script> 
+						</section>
+						<div id='footer-coffee'>
+							<div id='copyright' class="sub-container">
+								<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ThinkingBarbershop" data-color="#202127" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+							</div>
+						</div>
+						<section id='footer-contact' class="feature-list">
+							<script>$(function(){$("#footer-contact").load("/elements/footer/footer-contact.html")});</script> 
+						</section>
+					</div>
 			</section>
-
 		</div>
 
 		<!-- Scripts -->

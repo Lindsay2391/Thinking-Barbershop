@@ -2617,6 +2617,7 @@ input, select, textarea {
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
+		
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
@@ -2680,14 +2681,15 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #282b34 url("images/overlay.png");
+			background: #282b34 url("/images/overlay.png");
 			color: #eee;
 		}
 
 		#footer header.style1 {
 			padding-bottom: 6em;
 			margin-bottom: 6em;
-			border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+			
+			
 		}
 
 			#footer header.style1 h2 {
@@ -2698,6 +2700,13 @@ input, select, textarea {
 				color: inherit;
 			}
 
+		#footer .sub-container {
+			padding-bottom: 5em;
+			margin-bottom: 4em;
+			border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+			
+		}
+
 		#footer .feature-list {
 			max-width: 100%;
 		}
@@ -2707,7 +2716,7 @@ input, select, textarea {
 			}
 
 			#footer .feature-list h3:before {
-				background: #3d4249 url("images/overlay.png");
+				background: #3d4249 url("/images/overlay.png");
 			}
 
 /* Copyright */
@@ -2814,12 +2823,13 @@ input, select, textarea {
 				#footer header.style1 {
 					padding-bottom: 4em;
 					margin-bottom: 4em;
-					border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+					
 				}
 
 		/* Copyright */
 
 			#copyright {
+				border-top: solid 1px rgba(255, 255, 255, 0.05);
 				padding-top: 4em;
 				margin-top: 4em;
 			}

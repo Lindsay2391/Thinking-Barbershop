@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Out Data - Thinking Barbershop</title>
@@ -30,7 +25,7 @@
 						<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 							<script>
 							$(function(){
-							$("#nav").load("/nav.html");
+							$("#nav").load("/elements/nav.html");
 							});
 						</script> 
 					</nav>
@@ -59,7 +54,7 @@
 									<p><i>current priority: <strong>Sourcing Scoresheets & Backdating</strong></i></p>
 
 								</header>
-
+								
 								<button class="dark-accordion">What is captured from Scoresheets?</button>
 								<!-- This div holds the content to be displayed-->
 									<div class="dark-panel">
@@ -202,7 +197,15 @@
 								<!-- This div holds the content to be displayed-->
 									<div class="dark-panel">
 										<br>
-										<p class="style3">Next Steps</p>
+										<p class="style3">Typically the data work falls into 3 phases</p>
+										<p class="style3"><strong>Maintentnace</strong></p>
+										<p>Maintenance involves processing new contests as they are completed, and fixing any errors.</p>
+										<p class="style3"><strong>Backdating</strong></p>
+										<p>Backdating is sourcing and processing historical scoresheets across each organization, while keeping up to date with new contests.</p>
+										<p class="style3"><strong>Expanding</strong></p>
+										<p>Expanding is the process of introducing new data, such as chorus competitions, or organizations outside the current scope. This is more involved as it may require database restructuring or a new parsing model.</p>
+										<p>The plan for 2024 is to continue backdating, sourcing historical spreadsheets particularly for European organizations, then moving on to expanding into BHS & Alliance Chorus scores.</p>
+										<p>With all going to plan, 2025 will look to introduce HI, and then SAI. This order is due to the high similarity in scoresheet structure between HI and BHS.</p>
 									</div>
 							</article>
 						</div>
@@ -216,21 +219,29 @@
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 								<script>
 								$(function(){
-								$("#highlights").load("/featured-posts.html");
+								$("#highlights").load("/elements/featured-posts.html");
 						});
 					</script> 
 			</section>
 
 			<!-- Footer -->
-			<section id="footer" class="wrapper">
+			<section id="footer" class="wrapper style1">
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-								<script>
-								$(function(){
-								$("#footer").load("/pages/footer.html");
-						});
-					</script> 
+				<div class="title">About</div>
+					<div class="container">
+						<section id='footer-text'>
+							<script>$(function(){$("#footer-text").load("/elements/footer/footer-text.html")});</script> 
+						</section>
+						<div id='footer-coffee'>
+							<div id='copyright' class="sub-container">
+								<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ThinkingBarbershop" data-color="#202127" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+							</div>
+						</div>
+						<section id='footer-contact' class="feature-list">
+							<script>$(function(){$("#footer-contact").load("/elements/footer/footer-contact.html")});</script> 
+						</section>
+					</div>
 			</section>
-
 		</div>
 
 		<!-- Scripts -->

@@ -27,7 +27,7 @@
 							<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 								<script>
 								$(function(){
-								$("#nav").load("/nav.html");
+								$("#nav").load("/elements/nav.html");
 								});
 							</script> 
 						</nav>
@@ -62,7 +62,7 @@
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 								<script>
 								$(function(){
-								$("#highlights").load("/featured-posts.html");
+								$("#highlights").load("/elements/featured-posts.html");
 						});
 					</script> 
 			</section>
@@ -82,7 +82,7 @@
 											<section>
 												<h3 class="icon solid fa-database"> What organizations are included in the score database?</h3>
 												<p>The database currently includes scores from BABS, BHA, BHNZ, BHS, BIBA, BING, IABS, LABBS, and SNOBS. Scoresheet coverage and availability varies between organizations.</p>
-												<p>Visit <strong><a href="/pages/our-data.html">Our Data</a></strong> for more details</p>
+												<p>Visit <strong><a href="/pages/our-data.html">Our Data</a></strong> for more details.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
@@ -118,16 +118,23 @@
 				</section>
 
 
-
 			<!-- Footer -->
-			<!-- Highlights -->
-			<section id="footer" class="wrapper">
+			<section id="footer" class="wrapper style1">
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-								<script>
-								$(function(){
-								$("#footer").load("/pages/footer.html");
-						});
-					</script> 
+				<div class="title">About</div>
+					<div class="container">
+						<section id='footer-text'>
+							<script>$(function(){$("#footer-text").load("/elements/footer/footer-text.html")});</script> 
+						</section>
+						<div id='footer-coffee'>
+							<div id='copyright' class="sub-container">
+								<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ThinkingBarbershop" data-color="#202127" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+							</div>
+						</div>
+						<section id='footer-contact' class="feature-list">
+							<script>$(function(){$("#footer-contact").load("/elements/footer/footer-contact.html")});</script> 
+						</section>
+					</div>
 			</section>
 
 		</div>

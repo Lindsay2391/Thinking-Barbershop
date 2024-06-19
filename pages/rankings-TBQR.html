@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Quartet Rankings - Thinking Barbershop</title>
@@ -30,7 +25,7 @@
 							<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 								<script>
 								$(function(){
-								$("#nav").load("/nav.html");
+								$("#nav").load("/elements/nav.html");
 								});
 							</script> 
 						</nav>
@@ -50,16 +45,13 @@
 							<img src="/images/quartet_rankings_banner.jpg" alt="" />
 						</a>
 
-
-						<p class="style3">BIQR is designed to rank quartets from all across the world, outside of just the BHS international contest. This system ranks quartets on a weighted average of scores, reflecting each quartet's performance over the past 12 months.<br /></p>
-						<br>
 						<button class="course-accordion">Why use this ranking?</button>
 						<!-- This div holds the content to be displayed-->
 							<div class="course-panel">
 								<br>
 								<p class="style3">The purpose behind TBQR is to recognize the talented barbershop quartets across the world, acknowledging that there can be a multitude of reasons why a group may not be able to attend BHS International.</p>
 								<br>
-								<p class="style3">It also recognizes that an individual performance can be impacted by factors outside a quartet's control so while the ranking places a high importance on the most recent result, it also factors in other performances over a 12 month span.</p>
+								<p class="style3">It also recognizes that an individual performance can be impacted by factors outside a quartet's control so while the ranking places a high importance on the most recent result, it also factors in other performances..</p>
 								<br>
 							</div>
 
@@ -67,18 +59,42 @@
 						<!-- This div holds the content to be displayed-->
 							<div class="course-panel">
 								<br>
-								<p class="style3">The system calculates the rankings based on a weighted average of scores that quartets receive from competitions they participate in during the last 12 months.</p>
+								<p class="style3">The rankings are calcualted based on a weighted average of scores that quartets receive from competitions over a 12 month period.</p>
 								<br>
-								<p class="style3">The scores are from publically available scoresheets published by BHS and alliance organizations (BHA, BHNZ, BING!, BABS, BIBA, HH, IABS, LABBS, SNOBS)</p>
+								<li><strong>Contests over 12 month period.</strong></li>
+								<p>12 months represents a full cycle of most contests. Averaging all scores over this period ensures that, as much as possible a quartets ranking is not defined by a single performance. It also keeps the rankings relevant to current quartets, ensuring retired/inactive don't stay too long.</p>
+
+								<li><strong>Contest scores are weighted by time.</strong></li>
+								<p>With multiple contests per year, weighing a contest by it's recency ensures that the most recent performance is the most important. The time weighting is determined by dividing the score by the rank of the contest by date. </p>
+								<p><i> e.g. contest ranks <strong>1, 2, 3, 4</strong> would be weighted <strong>1, 0.5, 0.33, 0.25</strong> respectively.</i></p>
+
+								<li><strong>BHS International contests (Open, Varsity, Midwinter) are given maximum weighting.</strong></li>
+								<p>The 3 International BHS contests are the highest ranking contests each year. They also typically have the largest judging pool, and are the feature events for top quartets. 
+									These are by default assigned the highest weighting to reflect their importance. A quartet can be top of the rankings without attending the international contests, 
+									but a high score at these contests are sustained for longer than district/regionals.</p>
 								<br>
-							</div>
-						<button class="course-accordion">How are the scores weighted?</button>
-							<div class="course-panel">
 								<br>
-								<p class="style3">Each score a quartet receives is weighted by its relative timing and importance. The weighting for each score is determined by dividing the score by the rank of the contest by date, with the most recent contest given the highest priority.<br/>
-							 BHS International, Midwinter, and Varsity contests are given a full weighting of 1, reflecting its importance in the ranking calculation.  </p>
+								<p class="style3">Below is an example of the weightings, including a comparison with other averages, for the quartet <strong><i>Lady Barbalade</i></strong> as of <strong><i>1 June 2024</i></strong></p>
 							 	<br>
+								<br>
+								 <a class="image featured">
+									<img src="/images/data/ranking-example.png" alt="" />
+								</a>
 							</div>
+							<button class="course-accordion">Additional Notes</button>
+							<!-- This div holds the content to be displayed-->
+								<div class="course-panel">	
+									<p class="style3">Scores are calculated on data collected from publicly available <a href="/pages/scoresheets.html">scoresheets</a> from BHS and Alliance organizations. This means, in cases where a quartet performs for assessment only and is not included on any scoresheet, some performances may not be reflected in the rankings. 
+										For mor details on the underlying data visit <a href="/pages/our-data.html">Our Data</a>
+									</p>
+									<br>
+									<p class="style3">Scores are one side of the Barbershop Harmony coin. 
+										While rankings reflect the competitive side of this art form, they don't capture the full range of a quartet's sound, style, song choices, or performance. 
+										It's perfectly okay to enjoy quartets with lower rankings and not prefer some with higher scores. 
+										The most important thing is to appreciate the music and respect everyone’s tastes and opinions.
+									</p>
+								</div>
+													
 					</div>
 				</section>
 
@@ -144,19 +160,28 @@
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 								<script>
 								$(function(){
-								$("#highlights").load("/featured-posts.html");
+								$("#highlights").load("/elements/featured-posts.html");
 						});
 					</script> 
 			</section>
 
 			<!-- Footer -->
-			<section id="footer" class="wrapper">
+			<section id="footer" class="wrapper style1">
 				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-								<script>
-								$(function(){
-								$("#footer").load("/pages/footer.html");
-						});
-					</script> 
+				<div class="title">About</div>
+					<div class="container">
+						<section id='footer-text'>
+							<script>$(function(){$("#footer-text").load("/elements/footer/footer-text.html")});</script> 
+						</section>
+						<div id='footer-coffee'>
+							<div id='copyright' class="sub-container">
+								<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ThinkingBarbershop" data-color="#202127" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+							</div>
+						</div>
+						<section id='footer-contact' class="feature-list">
+							<script>$(function(){$("#footer-contact").load("/elements/footer/footer-contact.html")});</script> 
+						</section>
+					</div>
 			</section>
 
 		</div>
