@@ -1853,7 +1853,7 @@ input::-moz-focus-inner {
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 0.2s ease-out;
-		  width: 96%;
+		  width: 100%;
 		font-size: 15px;
 		line-height: 1.6em;
 		font-weight: 400;
